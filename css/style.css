@@ -1,23 +1,97 @@
-@font-face {
-    font-family: ChakraPetch;
-    src: url(../polices/ChakraPetch-Medium.ttf);
-}
-
+/* Les propriétés qui s'appliquent à tout le site */
 html{
     font-family: ChakraPetch;
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
-#titlebox{
+/* La mise en place de la police de caractères */
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../polices/ChakraPetch-Medium.ttf);
+}
+
+/* La boîte qui englobe le titre */
+#boiteDeTitre{
     display: flex;
     justify-content: center;
 }
 
-#pagetitle{
-    font-size: 3em;
-    color: black;
-    text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+/* Le texte du titre */
+#titre{
+    font-size: 2em;
+    color: white;
+    text-shadow: 0px 0px 18px rgba(255,0,0,1);
+    text-decoration: none;
 }
 
+/* La barre de navigation */
+nav{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 15px 5px #FFFFFF; 
+    box-shadow: 0px 0px 15px 5px #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+/* Les options de la NAV */
+.navChoices{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+/* L'ombre rouge au survol de chaque option */
+.navChoices:hover{
+    text-shadow: 0px 0px 18px rgb(253, 0, 0);
+    transition-duration: 0.5s;
+}
+
+/* Le contenu principal de la page */
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Texte de présentation de l'accueil */
+#presentation{
+    width: 50%;
+    font-size: xx-large;
+    margin-top: 0;
+    text-align: justify;
+    padding-right: 2%;
+}
+
+/* Photo de moi (pas encore là) */
+#photo{
+    width: 50%;
+    height: 500px;
+    border-radius: 100%;
+    border: 1px solid white;
+    padding-left: 2%;
+}
+
+/* Images des langages */
+.langages{
+    width: 40%;
+    margin: 2%;
+    height: 40%;
+    border-radius: 100px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
