@@ -1,0 +1,23 @@
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../polices/ChakraPetch-Medium.ttf);
+}
+
+html{
+    font-family: ChakraPetch;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titlebox{
+    display: flex;
+    justify-content: center;
+}
+
+#pagetitle{
+    font-size: 3em;
+    color: black;
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+}
+
