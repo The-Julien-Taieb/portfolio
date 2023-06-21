@@ -41,6 +41,7 @@ nav{
     border-radius: 10px;
     margin-bottom: 4%;
     text-align: center;
+    backdrop-filter: blur(5px);
 }
 
 /* Les options de la NAV */
@@ -49,6 +50,7 @@ nav{
     color: white;
     font-size: 2em;
     width: 25%;
+    transition-duration: 0.5s;
 }
 
 /* L'ombre rouge au survol de chaque option */
@@ -126,6 +128,7 @@ section{
     width: 25%;
     font-size: large;
     text-align: center;
+    transition-duration: 0.2s;
 }
 
 .boutonDuJeu:hover, #calculIMC:hover{
@@ -172,7 +175,10 @@ section{
 }
 
 #tailleEtPoids{
-    margin: 3%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
 }
 
 #champTaille, #champPoids{
