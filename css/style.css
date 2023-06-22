@@ -42,6 +42,7 @@ nav{
     margin-bottom: 4%;
     text-align: center;
     backdrop-filter: blur(5px);
+    width: 100%;
 }
 
 /* Les options de la NAV */
@@ -189,5 +190,17 @@ section{
 }
 
 #calculIMC{
-    margin-bottom: 5%;    
+    margin-bottom: 5%;
+}
+
+#blocCoordonnees{
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 2%;
+    border: 2px solid white;
+    -webkit-box-shadow: inset 0px 0px 15px 9px rgba(255,0,0,0.69); 
+    box-shadow: 0px 0px 15px 9px rgba(255,0,0,0.69);
+    font-size: x-large;
+    margin-right: 27%;
+    margin-left: 27%;
 }
